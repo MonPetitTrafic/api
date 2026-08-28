@@ -160,7 +160,11 @@ def parsing(ctxt:Any,line_slug:str)-> list[postsReady]:
 
     # récupérer les posts
     waitingPosts = feed["entries"]
-    
+
+    # création de l'ETag (/!\ prendre véritablement le dernier message même si non intéressant)
+    ### à compléter
+    # sauvagarde de l'ETag et du last_modified
+
     # TRAITEMENT
     for post in waitingPosts:
         dico:postsReady = {}
